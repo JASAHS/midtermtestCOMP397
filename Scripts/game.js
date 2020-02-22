@@ -1,4 +1,5 @@
 "use strict";
+// Date - 2/22/2020
 //IIFE - Immediately Invoked Function Expression
 //means -> self-executing anonymous function
 var Game = (function () {

@@ -42,12 +42,12 @@ var scenes;
             this.addChild(this._diceroll02);
             this.addChild(this._rollButton);
             this._rollButton.on("click", function () {
-                // let ranNum01=Math.floor(Math.random() * 6) + 1  ;
-                // let ranNum02=Math.floor(Math.random() * 6) + 1  ;
-                var ranNum01 = 2;
-                var ranNum02 = 5;
+                // code to generate random numbers    
+                var ranNum01 = Math.floor(Math.random() * 6) + 1;
+                var ranNum02 = Math.floor(Math.random() * 6) + 1;
                 console.log(ranNum02);
                 console.log(ranNum01);
+                //to update the dice rolls
                 _this._diceroll01 = new objects.Button(config.Game.ASSETS.getResult(ranNum01), 200, 240, true);
                 _this._diceroll02 = new objects.Button(config.Game.ASSETS.getResult(ranNum02), 400, 240, true);
             });
